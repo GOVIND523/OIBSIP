@@ -12,7 +12,7 @@ Welcome to my internship repository for Oasis Infobyte! This repository showcase
 📝 Description: You can create a personal portfolio with basic skills in CSS and HTML. This is yet again, one of the most common projects on web development for beginners. In a personal portfolio, you get to show a wide range of samples and skills and add your resume. You can add an image at the top where you can introduce yourself; below that, you can add contact information.
 🔗 Repository: [Task 2 - AI Image Processing](https://github.com/yourusername/task2-ai-image-processing)
 
-### Task 3: DWeb Development Project - Temperature Converter Website
+### Task 3: Web Development Project - Temperature Converter Website
 📝 Description: The user will input a temperature in either Fahrenheit or Celsius and press a "convert" button. The converted temperature will then be displayed with the correct unit. Your UI should include four main elements: Input field for the user to type in their temperature - don't forget to validate that the input is a number! Dropdown menu or radio button for the user to choose if they are inputting in Celsius or Fahrenheit. "Convert" button to trigger the temperature conversion. Display area for the final converted temperature and unit. For an extra challenge: You can add a third conversion option to convert from and to Kelvin as well.
 🔗 Repository: [Task 3 - Data Analysis and Visualization](https://github.com/yourusername/task3-data-analysis)
 
