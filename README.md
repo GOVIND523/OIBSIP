@@ -26,21 +26,6 @@ Welcome to my internship repository for Oasis Infobyte! This repository showcase
 📝 Description: With a basic understanding of HTML and CSS, you can easily create a page for someone you admire. Write about what you adore in the person, add images, give an appealing layout, and use paragraphs appropriately. You can also play around with different font styles and background colors.
 🔗 Repository: [Task 5 - Full-Stack Web Application](https://github.com/yourusername/task5-full-stack-app)
 
-### Task 6: Cybersecurity Project
-📝 Description: In this task, I focused on cybersecurity and implemented various security measures to protect systems and applications from vulnerabilities and attacks. I learned about common security threats, encryption techniques, secure coding practices, and performed penetration testing.
+### Task 3: Web Development Project - A basic To-Do web app
+📝 Description: Develop a basic to-do app that enables a user to add daily tasks. The to-do web app must allow users to add new items to a list, and items added to a list must be visible. Also, a user can mark a task “complete” upon its successful completion, and these completed tasks must appear on a separate list, say Completed Tasks. You can also add a separate section titled Pending Tasks that will list all the tasks that require completion. In such a case, the to-do list will be a union of the Pending Tasks list and the Completed Tasks list. Irrespective of the list, a user must be able to delete or edit tasks from it. To further increase the web app’s complexity or make it more detailed, you can add the date and time when a task is added and/or completed.
 🔗 Repository: [Task 6 - Cybersecurity Project](https://github.com/yourusername/task6-cybersecurity)
-
-## Level 3 Tasks 🌟
-
-### Task 7: Natural Language Processing (NLP)
-📝 Description: This task involved working with natural language processing techniques to analyze and process textual data. I explored libraries like NLTK or SpaCy, performed tasks such as sentiment analysis, text classification, and language generation using deep learning models like LSTM or Transformer.
-🔗 Repository: [Task 7 - Natural Language Processing (NLP)](https://github.com/yourusername/task7-nlp)
-
-### Task 8: Cloud Computing and Deployment
-📝 Description: In this task, I learned about cloud computing platforms like AWS, Azure, or GCP and how to deploy applications to the cloud. I explored services like EC2, S3, or App Engine, and gained hands-on experience in managing and scaling cloud-based applications.
-🔗 Repository: [Task 8 - Cloud Computing and Deployment](https://github.com/yourusername/task8-cloud-computing)
-
-### Task 9: Big Data Analytics
-📝 Description: This task involved working with big data technologies and frameworks like Hadoop, Spark, or Kafka. I processed and analyzed large datasets, implemented data pipelines, and gained insights from the data using distributed computing and parallel processing techniques.
-🔗 Repository: [Task 9 - Big Data Analytics](https://github.com/yourusername/task9-big-data-analytics)
-
