@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Calculator</title>
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               background-color: #f4f4f4;
+               padding: 20px;
+          }
+
+          .calculator {
+               max-width: 400px;
+               margin: 0 auto;
+               background-color: #fff;
+               border-radius: 8px;
+               padding: 20px;
+               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          }
+
+          .display {
+               font-size: 24px;
+               text-align: right;
+               padding: 10px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+               margin-bottom: 10px;
+          }
+
+          .buttons {
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+               grid-gap: 10px;
+          }
+
+          .button {
+               font-size: 20px;
+               text-align: center;
+               padding: 10px;
+               border: none;
+               border-radius: 4px;
+               background-color: #eee;
+               cursor: pointer;
+          }
+
+          .button:hover {
+               background-color: #ddd;
+          }
+
+          .button.operator {
+               background-color: #f1c40f;
+               color: #fff;
+          }
+
+          .button.operator:hover {
+               background-color: #d4ad0f;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="calculator">
+          <div class="display">0</div>
+          <div class="buttons">
+               <button class="button" onclick="appendNumber(7)">7</button>
+               <button class="button" onclick="appendNumber(8)">8</button>
+               <button class="button" onclick="appendNumber(9)">9</button>
+               <button class="button operator" onclick="setOperator('/')">/</button>
+               <button class="button" onclick="appendNumber(4)">4</button>
+               <button class="button" onclick="appendNumber(5)">5</button>
+               <button class="button" onclick="appendNumber(6)">6</button>
+               <button class="button operator" onclick="setOperator('*')">*</button>
+               <button class="button" onclick="appendNumber(1)">1</button>
+               <button class="button" onclick="appendNumber(2)">2</button>
+               <button class="button" onclick="appendNumber(3)">3</button>
+               <button class="button operator" onclick="setOperator('-')">-</button>
+               <button class="button" onclick="appendNumber(0)">0</button>
+               <button class="button" onclick="appendDecimal('.')">.</button>
+               <button class="button operator" onclick="setOperator('+')">+</button>
+               <button class="button" onclick="calculate()">=</button>
+          </div>
+     </div>
+
+     <script>
+          // JavaScript Code
+
+          const display = document.querySelector('.display');
+          let firstOperand = null;
+          let operator = null;
+          let awaitingSecondOperand = false;
+
+          function appendNumber(number) {
+               if (awaitingSecondOperand) {
+                    display.textContent = number;
+                    awaitingSecondOperand = false;
+               } else {
+                    if (display.textContent === '0') {
+                         display.textContent = number;
+                    } else {
+                         display.textContent += number;
+                    }
+               }
+          }
+
+          function appendDecimal() {
+               if (awaitingSecondOperand) {
+                    display.textContent = '0.';
+                    awaitingSecondOperand = false;
+                    return;
+               }
+
+               if (!display.textContent.includes('.')) {
+                    display.textContent += '.';
+               }
+          }
+
+          function setOperator(op) {
+               if (operator !== null) {
+                    calculate();
+               }
+               firstOperand = parseFloat(display.textContent);
+               operator = op;
+               awaitingSecondOperand = true;
+          }
+
+          function calculate() {
+               if (operator === null) return;
+
+               const secondOperand = parseFloat(display.textContent);
+               let result = 0;
+
+               switch (operator) {
+                    case '+':
+                         result = firstOperand + secondOperand;
+                         break;
+                    case '-':
+                         result = firstOperand - secondOperand;
+                         break;
+                    case '*':
+                         result = firstOperand * secondOperand;
+                         break;
+                    case '/':
+                         result = firstOperand / secondOperand;
+                         break;
+                    default:
+                         return;
+               }
+
+               display.textContent = result;
+               firstOperand = result;
+               operator = null;
+               awaitingSecondOperand = true;
+          }
+     </script>
+</body>
+
+</html>
