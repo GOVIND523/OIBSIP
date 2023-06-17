@@ -18,12 +18,12 @@ Welcome to my internship repository for Oasis Infobyte! This repository showcase
 
 ## Level 2 Tasks 🚀
 
-### Task 4: Machine Learning Model Development
-📝 Description: In this task, I delved into the exciting world of machine learning. I developed and trained machine learning models using popular frameworks such as TensorFlow and scikit-learn. The models were utilized for tasks like classification, regression, or clustering.
-🔗 Repository: [Task 4 - Machine Learning Model Development](https://github.com/yourusername/task4-machine-learning)
+### Task 1: Web Development Project - Calculator
+📝 Description: It takes a little skill to create a calculator with basic mathematical functionalities using CSS, HTML, and JavaScript. Calculators require an interactive interface to perform basic functions such as addition, subtraction, division, and multiplication. It will need a display screen to display the user's input and give the results. The grid system in CSS is for the alignment of buttons on the calculator. The additional tools you need to build a fully functional calculator include event listeners, if-else statements, operators, loops, and so on.
+🔗 Repository: [Task 1 - Calculator]((https://github.com/GOVIND523/OIBSIP/tree/eec5c2db1742cfc82acd6c4eb7186b71234ffec9/Level%202/Task%201))
 
-### Task 5: Full-Stack Web Application
-📝 Description: This task involved building a full-stack web application from scratch. I designed and implemented the frontend using modern frameworks like React or Vue.js, and developed the backend using technologies like Node.js and Express. The application showcases my ability to create interactive and dynamic web experiences.
+### Task 2: Web Development Project - Tribute Page
+📝 Description: With a basic understanding of HTML and CSS, you can easily create a page for someone you admire. Write about what you adore in the person, add images, give an appealing layout, and use paragraphs appropriately. You can also play around with different font styles and background colors.
 🔗 Repository: [Task 5 - Full-Stack Web Application](https://github.com/yourusername/task5-full-stack-app)
 
 ### Task 6: Cybersecurity Project
